@@ -1,19 +1,16 @@
 <h1 align="center">VQSRS</h1>
 
-<div style="text-align: center;">
+<p align="center">
     <b>Fast Real‑Time Brain Tumor Detection Based on Stimulated Raman Histology and Self‑Supervised Deep Learning Model</b>
-</div>
+</p>
 
-<div style="text-align: center;">
+<p align="center">
     Zijun Wang, Kaitai Han, Wu Liu, Zhenghui Wang, Chaojing Shi, Xi Liu, Mengyuan Huang, Guocheng Sun, Shitou Liu, Qianjin Guo*
-</div>
+</p>
 
-<div style="text-align: center;">
+<p align="center">
     Paper Link (<a href="https://doi.org/10.1007/s10278-024-01001-4">doi: 10.1007/s10278-024-01001-4</a>)
-</div>
-
-
-
+</p>
 ------
 
 ## Abstract
