@@ -4,11 +4,13 @@
     <b>Fast Real‑Time Brain Tumor Detection Based on Stimulated Raman Histology and Self‑Supervised Deep Learning Model</b>
 </center>
 
+<br>
 
 <center>
     Zijun Wang, Kaitai Han, Wu Liu, Zhenghui Wang, Chaojing Shi, Xi Liu, Mengyuan Huang, Guocheng Sun, Shitou Liu, Qianjin Guo*
 </centr>
 
+<br>
 
 <center>
 Paper Link(<a href="https://doi.org/10.1007/s10278-024-01001-4">doi: 10.1007/s10278-024-01001-4</a>)
@@ -23,7 +25,7 @@ In intraoperative brain cancer procedures, real-time diagnosis is essential for 
 
 
 
-##### 0. Main Environments
+### 0. Main Environments
 
 All experiments were conducted on three RTX 3080Ti GPUs.
 
@@ -42,11 +44,11 @@ pip install scikit-learn==1.2.2
 pip install scipy==1.9.1
 ```
 
-##### 1. Datasets
+### 1. Datasets
 
 The data used in this study were obtained from publicly available datasets. The availability of the data can be found at https://opensrh.mlins.org/ and is openly accessible to the research community.
 
-##### 2. Train the VQSRS
+### 2. Train the VQSRS
 
 - Before training, you need to modify the `homepath` and the `dataset path` in `args.py`. Ensure that the dataset format is the same as the ImageNet dataset format.
 
@@ -54,7 +56,7 @@ The data used in this study were obtained from publicly available datasets. The 
   python main.py
   ```
 
-##### 3. Visualization
+### 3. Visualization
 
 - Plot the UMAP visualization and perform hierarchical clustering, as well as calculate clustering metrics.
 
@@ -64,7 +66,7 @@ The data used in this study were obtained from publicly available datasets. The 
   python umap_clustermaps.py
   ```
 
-# Citation
+## Citation
 
 - If you found our work useful in your research, please consider citing our works(s) at:
 
