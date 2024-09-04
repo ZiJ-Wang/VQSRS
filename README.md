@@ -11,7 +11,6 @@
 <p align="center">
     Paper Link (<a href="https://doi.org/10.1007/s10278-024-01001-4">doi: 10.1007/s10278-024-01001-4</a>)
 </p>
-------
 
 ## Abstract
 
