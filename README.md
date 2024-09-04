@@ -1,7 +1,7 @@
-<h1 align="center">VQSRS</h1>
-
-<p align="center">
-    <b>Fast Real‑Time Brain Tumor Detection Based on Stimulated Raman Histology and Self‑Supervised Deep Learning Model</b>
+<div align="center">
+<h1>VQSRS </h1>
+<h3>Fast Real‑Time Brain Tumor Detection Based on Stimulated Raman Histology and Self‑Supervised Deep Learning Model</h3>
+</div>
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 
 In intraoperative brain cancer procedures, real-time diagnosis is essential for ensuring safe and effective care. The prevailing workflow, which relies on histological staining with hematoxylin and eosin (H&E) for tissue processing, is resource-intensive, time-consuming, and requires considerable labor. Recently, an innovative approach combining Stimulated Raman histology (SRH) and deep convolutional neural networks (CNN) has emerged, creating a new avenue for real-time cancer diagnosis during surgery. While this approach exhibits potential, there exists an opportunity for refinement in the domain of feature extraction. In this study, we employ Coherent Raman scattering imaging method and a self-supervised deep learning model (VQVAE2) to enhance the speed of SRH image acquisition and feature representation, thereby enhancing the capability of automated real-time bedside diagnosis. Specifically, we propose the VQSRS network, which integrates vector quantization with a proxy task based on patch annotation for analysis of brain tumor subtypes. Training on images collected from the SRS microscopy system, our VQSRS demonstrates a significant speed enhancement over traditional techniques (e.g., 20-30 minutes). Comparative studies in dimensionality reduction clustering confirm the diagnostic capacity of VQSRS rivals that of CNN. By learning a hierarchical structure of recognizable histological features, VQSRS classifies major tissue pathological categories in brain tumors. Additionally, an external semantic segmentation method is applied for identifying tumor-infiltrated regions in SRH images. Collectively, these findings indicate that this automated real-time prediction technique holds the potential to streamline intraoperative cancer diagnosis, providing assistance to pathologists in simplifying the process.
 
-
+![Image text](https://github.com/ZiJ-Wang/VQSRS/blob/main/overview.png)
 
 ### 0. Main Environments
 
