@@ -49,7 +49,7 @@ def generate_heatmap_from_df(df, matrix_shape=(54, 54), pixel_size=100):
     # return heatmap_matrix_combined
     return heatmap_matrix_tumor
 
-df = pd.read_csv('/data/wzj/cytoself-torch/VQSRS/heatmap/predictions.csv')
+df = pd.read_csv('./predictions.csv')
 
 df['Final Category'] = df.apply(determine_final_category, axis=1)
 

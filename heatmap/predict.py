@@ -11,7 +11,7 @@ import torch.nn.functional as F
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
-model_path = "/data/wzj/workend/result/vq2_srh_300_rgb_3xb16_151e_256idx/p/checkpoint0150.pth"
+model_path = "result/p/checkpoint0020.pth"
 model = Model_vqsrs()
 model_dict = model.state_dict()
 state = torch.load(model_path)
@@ -34,7 +34,7 @@ transform = transforms.Compose([
     transforms.ToTensor()
 ])
 
-image_folder = "/data/wzj/cytoself-torch/VQSRS/heatmap/t"  
+image_folder = "./t"  
 image_files = os.listdir(image_folder)
 idx = {0: 'hgg', 1: 'lgg', 2: 'mening', 3: 'metast', 4: 'normal', 5: 'pituita', 6: 'schwan'}
 

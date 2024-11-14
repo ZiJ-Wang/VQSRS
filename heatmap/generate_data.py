@@ -63,8 +63,8 @@ def split_and_save_image(image, save_dir, crop_size=(300, 300), step=100):
         crop.save(f"{save_dir}/crop_{x}_{y}.png")
     
 
-folder_path = "/data/wzj/My_preprocessing/Stitching images/002-3-rgb"  
-save_dir = '/data/wzj/cytoself-torch/VQSRS/heatmap/t'
+folder_path = "data/002-3-rgb" # All rgb images of a slide
+save_dir = './t' # Temporarily stored folder
 if not os.path.exists(save_dir):
     os.makedirs(save_dir)
 
