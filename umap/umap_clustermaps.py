@@ -48,7 +48,6 @@ test_loader = DataLoader(test_dataset,batch_size=batch_size,shuffle=True,
 new_idx = {v:k for k,v in test_loader.dataset.class_to_idx.items()}
 print(new_idx)
 
-img = next(iter(test_loader))[0].detach().cpu().numpy()
 torch.cuda.empty_cache()
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
@@ -58,6 +57,7 @@ label_pro = []
 label_pred=[]
 indexs = []
 model = model.to(device)
+model.eval()
 acc = [0, 0, 0, 0, 0, 0, 0]
 error = [0, 0, 0, 0, 0, 0, 0]
 
@@ -70,7 +70,8 @@ for i, _batch in enumerate(tqdm(test_loader, desc='Infer')):
     timg = _batch[0].to(device)
     tlabel = _batch[1].to(device)
 
-    outp = model(timg)
+    with torch.no_grad():
+        outp = model(timg)
     out = outp[6]
 
     pre_ = outp[3]

@@ -59,6 +59,17 @@ The data used in this study were obtained from publicly available datasets. The 
   python umap_clustermaps.py
   ```
 
+### 4. HeatMap
+
+- Put all patches of a slide in a folder (in RGB format), modify the code with the corresponding paths, and then run the code in the following order.
+
+  ```
+  cd heatmap
+  python generate_data
+  python predict
+  python generate_heatmap
+  ```
+
 ## Citation
 
 - If you found our work useful in your research, please consider citing our works(s) at:
